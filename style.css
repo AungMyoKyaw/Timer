@@ -1,0 +1,25 @@
+#timerBox{
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+	width: 10em;
+	height: 4em;
+	border:2px solid #778BFF;
+	border-radius: 1em;
+	padding: 0;
+	cursor: pointer;
+	background-color: #F7F7F7;
+	z-index: 999999999999999999999999999999999999999999999999999999999999999;
+}
+#timerBox:hover{
+	background-color: transparent;
+}
+#timer{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.5em;
+	margin:0;
+	height: 4em;
+	line-height: 2.7em;
+	color: red;
+}

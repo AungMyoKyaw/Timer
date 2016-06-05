@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Timer ",
+    "description": "Motivation Tool for me",
+    "version": "0.01",
+    // "icons": {
+    //     "16": "icon16.png",
+    //     "48": "icon48.png",
+    //     "128": "icon128.png"
+    // },
+    // "permissions": [
+    //     "storage","tabs"
+    // ],
+    "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "timer.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_idle"
+   } ]
+}
