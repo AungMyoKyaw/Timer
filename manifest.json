@@ -3,11 +3,11 @@
     "name": "Timer ",
     "description": "Motivation Tool for me",
     "version": "0.01",
-    // "icons": {
-    //     "16": "icon16.png",
-    //     "48": "icon48.png",
-    //     "128": "icon128.png"
-    // },
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
     // "permissions": [
     //     "storage","tabs"
     // ],
