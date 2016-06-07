@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Timer ",
     "description": "Motivation Tool for me",
-    "version": "0.01",
+    "version": "0.02",
     "icons": {
         "16": "16.png",
         "48": "48.png",

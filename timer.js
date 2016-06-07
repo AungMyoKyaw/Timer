@@ -9,20 +9,6 @@ var timer=createElement("p","timer");
 timerBox.appendChild(timer);
 document.body.appendChild(timerBox);
 var i = 0;
-// function getTime(){
-// 	chrome.storage.sync.get(document.domain,function(a){
-// 		// console.log(a);
-// 		var domain = document.domain;
-// 		if(a.domain){
-// 			console.log(a.domain);
-// 			i = a.domain;
-// 		} else {
-// 			console.log(0);
-// 			i = 0;
-// 		}
-// 	});
-// }
-// getTime();
 var timerstart = setInterval(function(){
 	i++;
 	timer.innerHTML=formatter(i);
@@ -37,7 +23,8 @@ function formatter(seconds){
 	}
 	return `${h}:${m}:${s}`;
 }
-// chrome.tabs.onRemoved.addListener(function(){
-// 	chrome.storage.sync.set("{"+document.domain+":"+i+"}");
-// });
-// console.log(formatter(5401));
+timerBox.ondblclick = function(){
+	clearInterval(timerstart);
+	this.style.display='none';
+	timer.style.display='none';
+}
