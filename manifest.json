@@ -1,20 +1,22 @@
 {
-    "manifest_version": 2,
-    "name": "Timer ",
-    "description": "Motivation Tool for me",
-    "version": "0.21",
-    "icons": {
-        "16": "16.png",
-        "48": "48.png",
-        "128": "128.png"
-    },
-    // "permissions": [
-    //     "storage","tabs"
-    // ],
-    "content_scripts": [{
-        "css": ["style.css"],
-        "js": ["timer.js"],
-        "matches": ["*://*/*"],
-        "run_at": "document_idle"
-    }]
+  "manifest_version": 2,
+  "name": "Timer ",
+  "description": "Motivation Tool for me",
+  "version": "0.21",
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  },
+  // "permissions": [
+  //     "storage","tabs"
+  // ],
+  "content_scripts": [
+    {
+      "css": ["style.css"],
+      "js": ["timer.js"],
+      "matches": ["*://*/*"],
+      "run_at": "document_idle"
+    }
+  ]
 }
